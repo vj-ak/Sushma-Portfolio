@@ -3,17 +3,29 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
+# Copy package files first for better caching
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install --legacy-peer-deps
+
+# Copy the rest of the application code
 COPY . .
 
-RUN npm install
-
+# Build the application
 RUN npm run build
 
-# Production Stage - Nginx
+# Production Stage
 FROM nginx:alpine
 
-COPY --from=build /app/.next/static /usr/share/nginx/html/.next/static
-COPY --from=build /app/public /usr/share/nginx/html/public
+# Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Copy build artifacts from the build stage
+# Next.js builds to 'out' folder when using 'output: export'
+COPY --from=build /app/out /usr/share/nginx/html
+
+EXPOSE 80
+
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
