@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
@@ -82,12 +81,10 @@ export default function Hero() {
                     {initials}
                   </div>
                 ) : (
-                  <Image
+                  <img
                     src={doctor.profilePhoto}
                     alt={doctor.name}
-                    fill
-                    className="object-cover object-top"
-                    priority
+                    className="w-full h-full object-cover object-top"
                     onError={() => setImgError(true)}
                   />
                 )}
