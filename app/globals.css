@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-50: #f0fdf4;
+  --color-brand-100: #dcfce7;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #16a34a;
+  --color-brand-700: #15803d;
+  --color-brand-900: #14532d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-lora), serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: #16a34a;
+  opacity: 0.3;
+}
+.swiper-pagination-bullet-active {
+  background: #16a34a;
+  opacity: 1;
+}
+
+/* Equal-height testimonial slides */
+.testimonials-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+/* Make all content visible in full-page screenshots */
+@media print {
+  * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }

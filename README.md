@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Sushma BAMS Portfolio
+
+Production-ready personal portfolio website for **Dr. Sushma S (BAMS Ayurveda Physician)** built with Next.js App Router, Tailwind CSS, and Framer Motion.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Swiper
+- Resend (contact email delivery)
+
+## Features
+
+- Single-page portfolio with sections for Hero, About, Skills, Experience, Certifications, Research, Testimonials, and Contact
+- Sticky top navigation with section anchors
+- Responsive design for desktop/tablet/mobile
+- Animated section reveals and interactive testimonial carousel
+- Contact API route (`app\api\contact\route.ts`) for email enquiries
+- Content-driven profile data from `data\content.ts`
+
+## Project Structure
+
+```text
+app\
+  api\contact\route.ts    # Contact form email API (Resend)
+  globals.css             # Global styles + Tailwind theme tokens
+  layout.tsx              # App shell + metadata + fonts
+  page.tsx                # Home page section composition
+components\
+  *.tsx                   # Reusable section components
+data\
+  content.ts              # Doctor profile and section content source
+public\images\            # Site images and assets
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create `.env.local` in the project root:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```env
+   RESEND_API_KEY=your_resend_api_key_here
+   CONTACT_EMAIL=doctor@example.com
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start development server:
 
-## Learn More
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## Content Updates
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Most text/content changes can be done in one place:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `data\content.ts`: profile details, bio, skills, experience timeline, certifications, research entries, testimonials, and social links.
+
+For visual/layout changes, edit corresponding files in `components\` and `app\globals.css`.
+
+## Deployment
+
+Deploy on any Node.js-compatible host (Vercel recommended):
+
+1. Set environment variables (`RESEND_API_KEY`, `CONTACT_EMAIL`)
+2. Run `npm run build`
+3. Start with `npm run start`
+
+## Notes
+
+- This project uses Next.js 16. If you are changing framework-level behavior, refer to local framework docs under `node_modules\next\dist\docs\`.

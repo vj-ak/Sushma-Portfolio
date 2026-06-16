@@ -1,0 +1,17 @@
+services:
+  sushma-portfolio:
+    image: sushma-portfolio:latest
+    container_name: sushma
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sushma.rule=Host(`drsushma.webhost.atsnet.in`)"
+      - "traefik.http.routers.sushma.entrypoints=websecure"
+      - "traefik.http.routers.sushma.tls.certresolver=cloudflare" # Changed from letsencrypt
+      - "traefik.http.services.sushma.loadbalancer.server.port=80"
+
+networks:
+  traefik:
+    external: true
