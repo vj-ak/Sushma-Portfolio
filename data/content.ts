@@ -166,7 +166,7 @@ export const doctor = {
     {
       title: "Himalaya Ayurveda Conference",
       venue: "Himalaya Wellness",
-      year: "2023",
+      year: "Oct 2023",
       type: "Delegate" as const,
       link: "",
     },
