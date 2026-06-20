@@ -3,6 +3,8 @@ import { Inter, Lora } from 'next/font/google'
 import './globals.css'
 import { activeTheme } from '@/config/site'
 import { themes } from '@/data/themes'
+import { ThemeProvider } from '@/components/ThemeProvider'
+import { ThemePicker } from '@/components/ThemePicker'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -99,7 +101,10 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{ __html: themeCSS }} />
       </head>
       <body className="font-sans text-gray-800 bg-white antialiased">
-        {children}
+        <ThemeProvider>
+          {children}
+          <ThemePicker />
+        </ThemeProvider>
       </body>
     </html>
   )
