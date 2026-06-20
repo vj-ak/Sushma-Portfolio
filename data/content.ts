@@ -9,7 +9,7 @@ export const doctor = {
   email: "drsushmas852@gmail.com",
   phone: "+91 75981 58582",
   location: "Madiwala, Bengaluru, Karnataka, India – 560068",
-  consultationHours: "Mon – Sun, 9:30 AM – 8:00 PM (Wed–Sat: one day weekly off)",
+  consultationHours: "Mon – Sun, 9:30 AM – 8:00 PM (Weekly off: usually Wednesday, subject to change)",
 
   // ── About ───────────────────────────────────────────────────
   bio: [
@@ -158,7 +158,7 @@ export const doctor = {
     },
     {
       title: "Insight of Parkinsonism in Ayurveda",
-      venue: "Under Submission",
+      venue: "Conference name to be updated",
       year: "2024",
       type: "Presented" as const,
       link: "",
@@ -170,31 +170,31 @@ export const doctor = {
     {
       quote: "Dr. Sushma's approach to my chronic digestive issues was completely different from anything I'd tried before. After one month of treatment I felt genuinely better.",
       name: "Anonymous",
-      role: "Patient",
+      role: "Patient, Bengaluru",
       rating: 5,
     },
     {
       quote: "I had been struggling with PCOD for years. Dr. Sushma's Ayurvedic treatment plan brought my cycles back to normal within three months. I'm so grateful.",
       name: "Anonymous",
-      role: "Patient",
+      role: "Patient, Bengaluru",
       rating: 5,
     },
     {
       quote: "My lower back pain was making daily life unbearable. After the Panchakarma sessions with Dr. Sushma, I have 80% relief and can finally sleep through the night.",
       name: "Anonymous",
-      role: "Patient",
+      role: "Patient, Hosur",
       rating: 5,
     },
     {
       quote: "Dr. Sushma patiently explained every step of my treatment for thyroid dysfunction. Her holistic approach — diet, herbs, and lifestyle — made a real difference.",
       name: "Anonymous",
-      role: "Patient",
+      role: "Patient, Chennai",
       rating: 5,
     },
     {
       quote: "I came in with severe migraines that tablets couldn't control. The Nasya and Shirodhara treatments she recommended reduced my episodes dramatically.",
       name: "Anonymous",
-      role: "Patient",
+      role: "Patient, Bengaluru",
       rating: 5,
     },
     {
