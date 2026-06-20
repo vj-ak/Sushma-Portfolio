@@ -131,7 +131,7 @@ export const doctor = {
       year: "2024",
     },
     {
-      name: "Delegate – \"Integrative Approach of AYUSH Medicine in Healthcare\"",
+      name: "Delegate – Integrative Approach of AYUSH Medicine in Healthcare",
       issuer: "Captain Srinivasa Murthy Central Ayurveda Research Institute",
       year: "Jan 2024",
     },
