@@ -35,7 +35,7 @@ export function ThemePicker() {
                   style={{ background: t.brand[600] }}
                 />
                 <span className="text-xs font-medium text-gray-700">{t.label}</span>
-                <span className="text-[10px] text-gray-400 ml-auto">{t.description}</span>
+                <span className="text-[10px] text-gray-400 ml-auto hidden sm:inline">{t.description}</span>
               </button>
             )
           })}

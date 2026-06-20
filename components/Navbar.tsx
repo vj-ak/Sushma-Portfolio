@@ -54,12 +54,12 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 text-gray-600"
+            className="md:hidden p-2 min-h-[44px] min-w-[44px] flex flex-col items-center justify-center text-gray-600"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <div className="w-5 h-0.5 bg-current mb-1" />
-            <div className="w-5 h-0.5 bg-current mb-1" />
+            <div className="w-5 h-0.5 bg-current mb-1.5" />
+            <div className="w-5 h-0.5 bg-current mb-1.5" />
             <div className="w-5 h-0.5 bg-current" />
           </button>
         </div>

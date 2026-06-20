@@ -67,7 +67,7 @@ export default function Contact() {
                   <p className="text-xs font-medium uppercase tracking-widest text-gray-400 mb-1">
                     {label}
                   </p>
-                  <p className="text-sm font-medium text-gray-800 leading-snug">
+                  <p className="text-sm font-medium text-gray-800 leading-snug break-words">
                     {value}
                   </p>
                 </div>
@@ -80,14 +80,14 @@ export default function Contact() {
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="flex items-center gap-4 bg-brand-50 border border-brand-100 rounded-2xl p-5 hover:border-brand-400 hover:shadow-sm transition-all"
+                className="flex items-start gap-4 bg-brand-50 border border-brand-100 rounded-2xl p-5 hover:border-brand-400 hover:shadow-sm transition-all"
               >
                 {content}
               </a>
             ) : (
               <div
                 key={label}
-                className="flex items-center gap-4 bg-brand-50 border border-brand-100 rounded-2xl p-5"
+                className="flex items-start gap-4 bg-brand-50 border border-brand-100 rounded-2xl p-5"
               >
                 {content}
               </div>

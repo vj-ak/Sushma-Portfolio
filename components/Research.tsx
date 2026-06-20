@@ -90,7 +90,7 @@ export default function Research() {
                       const Icon = cfg.icon
                       const isLast = si === group.length - 1
                       return (
-                        <div key={si} className="px-6 py-4 flex items-center gap-4 bg-white">
+                        <div key={si} className="px-4 sm:px-6 py-4 flex flex-wrap items-center gap-3 bg-white">
                           <div className="flex flex-col items-center flex-shrink-0">
                             <div className={`w-8 h-8 rounded-full border flex items-center justify-center ${cfg.bg}`}>
                               <Icon className={`text-sm ${cfg.color}`} />
@@ -98,9 +98,9 @@ export default function Research() {
                             {!isLast && <div className="w-px h-4 bg-gray-200 mt-1" />}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <p className="text-sm text-gray-600 leading-snug">{step.venue}</p>
+                            <p className="text-sm text-gray-600 leading-snug break-words">{step.venue}</p>
                           </div>
-                          <div className="flex items-center gap-2 flex-shrink-0">
+                          <div className="flex items-center gap-2 flex-shrink-0 ml-auto">
                             <span className="text-xs text-gray-400">{step.year}</span>
                             <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full border ${cfg.bg} ${cfg.color}`}>
                               {cfg.label}

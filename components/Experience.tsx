@@ -44,7 +44,7 @@ export default function Experience() {
                       <p className="text-sm text-brand-600 font-medium">{exp.institution}</p>
                       <p className="text-xs text-gray-400 mt-0.5">{exp.location}</p>
                     </div>
-                    <span className="bg-brand-50 text-brand-700 text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap border border-brand-100">
+                    <span className="bg-brand-50 text-brand-700 text-xs font-medium px-3 py-1 rounded-full border border-brand-100 self-start sm:whitespace-nowrap">
                       {exp.period}
                     </span>
                   </div>

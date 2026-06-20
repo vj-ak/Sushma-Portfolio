@@ -41,14 +41,14 @@ export default function Hero() {
                 href={`https://wa.me/${doctor.social.whatsapp.replace(/\D/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium px-7 py-3.5 rounded-full transition-colors shadow-sm shadow-brand-200"
+                className="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium px-7 py-3.5 rounded-full transition-colors shadow-sm shadow-brand-200 w-full sm:w-auto"
               >
                 <FaWhatsapp className="text-lg" />
                 Book Consultation
               </a>
               <button
                 onClick={() => document.querySelector('#skills')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center justify-center border border-gray-200 text-gray-600 hover:border-brand-500 hover:text-brand-600 font-medium px-7 py-3.5 rounded-full transition-colors"
+                className="inline-flex items-center justify-center border border-gray-200 text-gray-600 hover:border-brand-500 hover:text-brand-600 font-medium px-7 py-3.5 rounded-full transition-colors w-full sm:w-auto"
               >
                 View My Specialities
               </button>
