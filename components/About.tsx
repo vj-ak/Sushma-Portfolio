@@ -28,7 +28,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
           >
             {doctor.bio.map((para, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed text-base">
+              <p key={i} className="text-gray-600 leading-relaxed text-base text-justify">
                 {para}
               </p>
             ))}
