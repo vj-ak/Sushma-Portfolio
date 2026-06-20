@@ -13,9 +13,9 @@ export const doctor = {
 
   // ── About ───────────────────────────────────────────────────
   bio: [
-    "I am a dedicated and compassionate BAMS graduate from Sri Sairam Ayurveda Medical College & Research Center, Chennai (2024), with strong foundational knowledge and hands-on experience through clinical internships at leading Ayurvedic institutions.",
-    "Through my compulsory and part-time internships at Sri Sairam Ayurveda Medical College, Kottakkal Arya Vaidya Sala, and Dhanwantralaya Ayurveda Specialty Hospital, I gained in-depth experience in OPD/IPD patient management across 300+ cases, Panchakarma procedures, herbal dispensing, and clinical documentation.",
-    "I currently practice at Vedakshethra Ayurvedic & Panchakarma Clinic, Madiwala, Bengaluru — delivering authentic Kerala-style Ayurveda and personalised care for lifestyle diseases, women's health, and pain management.",
+    "Dr. Sushma S is a qualified Ayurvedic Physician (BAMS, 2024) with a strong foundation in classical Ayurvedic medicine and evidence-based clinical practice. She graduated from Sri Sairam Ayurveda Medical College & Research Center, Chennai — one of Tamil Nadu's leading Ayurvedic institutions — where she developed in-depth expertise across all major departments of Ayurvedic medicine.",
+    "Her clinical training spans multiple prestigious institutions, including Kottakkal Arya Vaidya Sala and Dhanwantralaya Ayurveda Specialty Hospital, providing hands-on exposure to over 300 OPD cases, advanced Panchakarma procedures, herbal pharmacology, and structured patient documentation. This breadth of experience has equipped her with both the technical proficiency and the patient-centred approach essential to quality Ayurvedic care.",
+    "Dr. Sushma currently practices at Vedakshethra Kerala Ayurvedic Treatment Centre, Madiwala, Bengaluru, delivering authentic Kerala-style Panchakarma and personalised treatment protocols for lifestyle diseases, women's health, and musculoskeletal conditions. She is committed to integrating the time-tested wisdom of Ayurveda with a compassionate, evidence-informed approach to holistic healing.",
   ],
 
   stats: [
