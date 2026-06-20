@@ -157,8 +157,8 @@ export const doctor = {
       link: "",
     },
     {
-      title: "Insight of Parkinsonism in Ayurveda",
-      venue: "Conference name to be updated",
+      title: "Application of 3D Printing in Ayurveda Pharmacy",
+      venue: "\"Insight of Parkinsonism in Ayurveda\" Conference",
       year: "2024",
       type: "Presented" as const,
       link: "",
