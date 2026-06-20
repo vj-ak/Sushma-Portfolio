@@ -124,26 +124,31 @@ export const doctor = {
       name: "BAMS – Bachelor of Ayurvedic Medicine & Surgery",
       issuer: "Sri Sairam Ayurveda Medical College & Research Center, Chennai",
       year: "2024",
+      category: "degree" as const,
     },
     {
       name: "Oral Presentation – \"Global Ayurveda: Innovations & Integrations\"",
       issuer: "International Conference on Ayurveda",
       year: "2024",
+      category: "conference" as const,
     },
     {
       name: "Delegate – Integrative Approach of AYUSH Medicine in Healthcare",
       issuer: "Captain Srinivasa Murthy Central Ayurveda Research Institute",
       year: "Jan 2024",
+      category: "conference" as const,
     },
     {
       name: "Delegate – Himalaya Ayurveda Conference",
       issuer: "Himalaya Wellness",
       year: "2023",
+      category: "conference" as const,
     },
     {
       name: "Community Health Camps & Workshops",
       issuer: "Sri Sairam Ayurveda Medical College (during college)",
       year: "2023 – 2025",
+      category: "workshop" as const,
     },
   ],
 
