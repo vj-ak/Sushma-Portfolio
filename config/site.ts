@@ -4,4 +4,4 @@
 // Available: "emerald" | "ocean" | "saffron" | "lotus" | "amethyst" | "teal"
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const activeTheme = "lotus" as const
+export const activeTheme = "teal" as const

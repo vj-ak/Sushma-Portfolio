@@ -4,7 +4,6 @@ import './globals.css'
 import { activeTheme } from '@/config/site'
 import { themes } from '@/data/themes'
 import { ThemeProvider } from '@/components/ThemeProvider'
-import { ThemePicker } from '@/components/ThemePicker'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -169,7 +168,6 @@ export default function RootLayout({
       <body className="font-sans text-gray-800 bg-white antialiased">
         <ThemeProvider>
           {children}
-          <ThemePicker />
         </ThemeProvider>
       </body>
     </html>
