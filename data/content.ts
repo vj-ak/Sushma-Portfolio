@@ -14,13 +14,13 @@ export const doctor = {
   // ── About ───────────────────────────────────────────────────
   bio: [
     "I am a dedicated and compassionate BAMS graduate from Sri Sairam Ayurveda Medical College & Research Center, Chennai (2024), with strong foundational knowledge and hands-on experience through clinical internships at leading Ayurvedic institutions.",
-    "Through my compulsory and part-time internships at Sri Sairam Ayurveda Medical College, Kottakkal Arya Vaidya Sala, and Dhanwantralaya Ayurveda Specialty Hospital, I gained in-depth experience in OPD/IPD patient management, Panchakarma procedures, herbal dispensing, and clinical documentation.",
+    "Through my compulsory and part-time internships at Sri Sairam Ayurveda Medical College, Kottakkal Arya Vaidya Sala, and Dhanwantralaya Ayurveda Specialty Hospital, I gained in-depth experience in OPD/IPD patient management across 300+ cases, Panchakarma procedures, herbal dispensing, and clinical documentation.",
     "I currently practice at Vedakshethra Ayurvedic & Panchakarma Clinic, Madiwala, Bengaluru — delivering authentic Kerala-style Ayurveda and personalised care for lifestyle diseases, women's health, and pain management.",
   ],
 
   stats: [
     { value: "5.5+", label: "Years of Study" },
-    { value: "200+", label: "OPD Cases" },
+    { value: "300+", label: "OPD Cases" },
     { value: "8",    label: "Panchakarma Therapies" },
     { value: "2",    label: "Research Papers" },
   ],
